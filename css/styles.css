@@ -85,8 +85,13 @@ a {
 .anchor {
     color: var(--title-text-color);
 }
-.current, .anchor:hover, .anchor:focus  {
+.current, 
+.anchor:hover, 
+.anchor:focus, 
+.header-icon:hover,
+.header-icon:focus   {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 .nav-link {
     display: inline-block;
@@ -104,7 +109,16 @@ a {
 .nav-button-item {
     margin-right: 50px;
 }
-
+.header-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--text-color);
+}
+/* .header-icon:hover,
+.header-icon:focus {
+    fill: var(--accent-color);
+} */
 /* --- Button --- */
 .section-hero {
     padding-top: 200px;
@@ -261,6 +275,41 @@ a {
 }
 .footer-list {
     margin-bottom: 9px;
+}
+.footer-container {
+    display: flex;
+    gap: 70px;
+}
+.join-in {
+    margin-bottom: 20px;
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.social-list-footer {
+    display: flex;
+    column-gap: 10px;
+}
+.social-list-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list-icon-footer {
+    fill: var(--primary-color);
+    width: 20px;
+    height: 20px;
+}
+.social-list-link-footer:hover, 
+.social-list-link-footer:focus {
+    color: var(--accent-color);
 }
 /* --- Portfolio --- */
 .section-portfolio {
