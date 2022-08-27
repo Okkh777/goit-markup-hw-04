@@ -165,6 +165,19 @@ a {
 .section-features {
     padding-top: 95px;
 }
+.feature-icon-btn {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background: var(--button-color);
+    border-radius: 4px;
+    border: none;
+}
+.feature-icon {
+    width: 70px;
+    height: 70px;
+
+}
 .features-list {
     display: flex;
     column-gap: 30px;
@@ -309,7 +322,7 @@ a {
 }
 .social-list-link-footer:hover, 
 .social-list-link-footer:focus {
-    color: var(--accent-color);
+    background-color: var(--accent-color);
 }
 /* --- Portfolio --- */
 .section-portfolio {
