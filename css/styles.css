@@ -7,6 +7,7 @@
     --text-color: #757575;
     --button-color: #F5F4FA;
     --logo-dark-color: #000000;
+    --icon-color: #AFB1B8;
 }
 h1,
 h2,
@@ -165,7 +166,10 @@ a {
 .section-features {
     padding-top: 95px;
 }
-.feature-icon-btn {
+.feature-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
@@ -260,6 +264,47 @@ a {
     line-height: 1.1875;
     text-align: center;
 }
+/* --- Cients --- */
+.section-clients {
+    padding-top: 87px;
+    padding-bottom: 101px;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+    
+    gap: 30px;
+}
+.client-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+.client-link {
+    display: inline-block;
+    width: 106px;
+    height: 60px;
+    /* border-color: 1px solid var(--icon-color);
+    border-radius: 4px; */
+}
+.client-icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-color);
+}
+.client-link:hover .client-icon, 
+.client-link:focus .client-icon {
+    fill: var(--accent-color);
+}
+.client-item:hover, 
+.client-item:focus  {
+    border-color: var(--accent-color);
+}
+
 /* --- Footer --- */
 .footer-color {
     padding-top: 60px;
