@@ -92,10 +92,9 @@ a {
 .header-icon:hover,
 .header-icon:focus   {
     color: var(--accent-color);
-    fill: var(--accent-color);
 }
 .nav-link {
-    display: inline-block;
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-style: normal;
@@ -106,20 +105,17 @@ a {
 }
 .nav-button {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-button-item {
     margin-right: 50px;
 }
 .header-icon {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
-    fill: var(--text-color);
+    fill: currentColor;
 }
-/* .header-icon:hover,
-.header-icon:focus {
-    fill: var(--accent-color);
-} */
+
 /* --- Button --- */
 .section-hero {
     padding-top: 200px;
